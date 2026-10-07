@@ -1,0 +1,28 @@
+Package: letools
+Title: Life Tables and Demographic Decomposition for Population Health Metrics
+Version: 0.1.0
+Authors@R:
+    person("Jing-Zhong", "Wang", role = c("aut", "cre"),
+           email = "jzwang1011@gmail.com")
+Description: Construction of abridged life tables from age-specific mortality
+    rates, with Kannisto or Gompertz extrapolation of old-age mortality,
+    Coale-Demeny separation factors in infancy, and optional Keyfitz refinement
+    elsewhere. Provides exact Arriaga and Pollard decompositions of differences
+    in life expectancy, by age and by cause of death, and Chiang standard errors
+    for life tables built from registered deaths. All functions operate
+    column-wise over a matrix of posterior draws, so a single life table is the
+    one-column case and uncertainty propagates without changes to calling code.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.0)
+Imports:
+    stats,
+    utils
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/jingzhong1011/letools
+BugReports: https://github.com/jingzhong1011/letools/issues
+Config/roxygen2/version: 8.0.0
